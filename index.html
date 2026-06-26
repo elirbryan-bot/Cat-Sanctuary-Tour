@@ -28,6 +28,44 @@
         height: auto;
         border: 2px solid #ccc;
     }
+    
+.legend {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.legend h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.legend-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+}
+
+.legend-grid a {
+    display: block;
+    text-decoration: none;
+    background: #4CAF50;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.legend-grid a:hover {
+    background: #2E7D32;
+    transform: scale(1.03);
+}
+
 </style>
 </head>
 
@@ -41,6 +79,28 @@
 
 <map name="sanctuarymap">
 
+<div class="legend">
+    <h2>Explore the Sanctuary</h2>
+
+    <div class="legend-grid">
+
+        <a href="corner-house.html">Conner House</a>
+        <a href="val-jones.html">Val Jones</a>
+        <a href="hill-house.html">Hill House</a>
+        <a href="double-wide.html">Double Wide/Houser House</a>
+        <a href="single-wide.html">Single Wide</a>
+        <a href="new-aids.html">New Aids</a>
+        <a href="back-courtyard-pens.html">Back courtyard/Pens</a>
+        <a href="front-courtyard.html">Front courtyard</a>
+        <a href="visitorsarea.html">Visitor Area</a>
+        <a href="gazebo-dons-dugout.html">Gazebo/Dons dugout</a>
+        <a href="old-rabbit-area.html">Old Rabbit Area</a>
+        <a href="leukemia.html">Leukemia</a>
+        <a href="yellow-shed.html">Yellow Shed</a>
+
+    </div>
+</div>
+    
     <!-- Conner House -->
     <area shape="rect"
           coords="160,480,260,560"
