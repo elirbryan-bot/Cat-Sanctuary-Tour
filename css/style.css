@@ -74,10 +74,10 @@ h1{
     background:#4CAF50;
     color:white;
     text-decoration:none;
-    padding:18px;
+    padding:10px;
     border-radius:10px;
-    font-size:18px;
-    font-weight:bold;
+    font-size:14px;
+    font-weight:600;
     transition:.2s;
 }
 
@@ -153,12 +153,12 @@ header h1{
 @media (max-width:700px){
 
     h1{
-        font-size:30px;
-        margin-top:18px;
+        font-size:28px;
+        margin-top:15px;
     }
 
     .subtitle{
-        font-size:16px;
+        font-size:15px;
         margin-bottom:15px;
     }
 
@@ -167,41 +167,25 @@ header h1{
     }
 
     .legend{
-        width:96%;
-        padding:20px 15px;
-        margin-top:25px;
+        width:95%;
+        padding:15px;
+        margin-top:20px;
     }
 
     .legend h2{
-        font-size:24px;
+        font-size:22px;
+        margin-bottom:15px;
     }
 
     .legend-grid{
-        grid-template-columns:1fr;
-        gap:14px;
+        grid-template-columns:repeat(2, 1fr);
+        gap:10px;
     }
 
     .legend-grid a{
-        font-size:18px;
-        padding:18px;
-    }
-
-    header{
-        padding:18px;
-    }
-
-    header h1{
-        font-size:30px;
-    }
-
-    .container{
-        margin:15px;
-        padding:20px;
-    }
-
-    .info-box p{
-        font-size:18px;
-        line-height:1.6;
+        padding:12px 8px;
+        font-size:15px;
+        border-radius:8px;
     }
 
 }
