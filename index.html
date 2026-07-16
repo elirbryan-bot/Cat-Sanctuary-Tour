@@ -13,24 +13,28 @@
         background: #f4f4f4;
     }
 
-    h1 {
-        padding: 20px;
+    h1{
+    font-size:clamp(1.5rem,5vw,2.8rem);
+    padding:15px 10px;
+    margin:0;
     }
 
-    .map-container {
-        max-width: 1400px;
-        margin: auto;
-        padding: 20px;
+    .map-container{
+    max-width:1400px;
+    margin:auto;
+    padding:8px;
     }
 
-    img {
-        width: 100%;
-        height: auto;
-        border: 2px solid #ccc;
+    img{
+    width:100%;
+    height:auto;
+    border-radius:12px;
+    border:2px solid #bbb;
     }
     
 .legend {
-    max-width: 1000px;
+    width:95%;
+    max-width:900px;
     margin: 40px auto;
     padding: 20px;
     background: white;
@@ -46,19 +50,19 @@
 .legend-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 12px;
+    gap: 16px;
 }
 
-.legend-grid a {
-    display: block;
-    text-decoration: none;
-    background: #4CAF50;
-    color: white;
-    padding: 12px;
-    border-radius: 8px;
-    text-align: center;
-    font-weight: bold;
-    transition: 0.2s;
+.legend-grid a{
+    display:block;
+    background:#4CAF50;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    padding:18px 14px;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:bold;
 }
 
 .legend-grid a:hover {
