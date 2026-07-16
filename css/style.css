@@ -65,6 +65,34 @@ h1{
     cursor:pointer;
 }
 
+.close-map{
+    position:absolute;
+    top:20px;
+    right:20px;
+
+    width:50px;
+    height:50px;
+
+    border:none;
+    border-radius:50%;
+
+    background:white;
+    color:#333;
+
+    font-size:28px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.3);
+
+    z-index:10000;
+}
+
+.close-map:hover{
+    background:#f2f2f2;
+}
+
 /* ---------------------- */
 /* LEGEND */
 /* ---------------------- */
