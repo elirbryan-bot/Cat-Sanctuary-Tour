@@ -1,19 +1,105 @@
+/* ---------------------- */
+/* GENERAL */
+/* ---------------------- */
+
 body{
     margin:0;
     font-family:Arial, Helvetica, sans-serif;
     background:#eef4ea;
     color:#333;
+    text-align:center;
 }
+
+/* ---------------------- */
+/* HOMEPAGE */
+/* ---------------------- */
+
+h1{
+    font-size:clamp(1.8rem,5vw,3rem);
+    margin:20px 0 10px;
+    padding:0 15px;
+    color:#2f5d3b;
+}
+
+.subtitle{
+    margin:0 auto 20px;
+    padding:0 20px;
+    max-width:700px;
+    color:#666;
+    font-size:18px;
+}
+
+.map-container{
+    max-width:1400px;
+    margin:auto;
+    padding:8px;
+}
+
+.map-container img{
+    width:100%;
+    height:auto;
+    border:2px solid #bbb;
+    border-radius:14px;
+}
+
+/* ---------------------- */
+/* LEGEND */
+/* ---------------------- */
+
+.legend{
+    width:95%;
+    max-width:1000px;
+    margin:35px auto;
+    padding:30px;
+    background:white;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+.legend h2{
+    margin-top:0;
+    margin-bottom:25px;
+    font-size:32px;
+    color:#2f5d3b;
+}
+
+.legend-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:16px;
+}
+
+.legend-grid a{
+    display:block;
+    background:#4CAF50;
+    color:white;
+    text-decoration:none;
+    padding:18px;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.2s;
+}
+
+.legend-grid a:hover{
+    background:#2E7D32;
+    transform:translateY(-2px);
+}
+
+/* ---------------------- */
+/* LOCATION PAGES */
+/* ---------------------- */
 
 header{
     background:#3e704d;
     color:white;
     text-align:center;
-    padding:30px;
+    padding:25px;
 }
 
 header h1{
     margin:0;
+    color:white;
     font-size:42px;
 }
 
@@ -21,19 +107,27 @@ header h1{
     max-width:1000px;
     margin:40px auto;
     padding:30px;
-    background:green;
+    background:white;
     border-radius:18px;
     box-shadow:0 10px 30px rgba(0,0,0,.15);
 }
 
-img{
+.container img{
     width:100%;
     border-radius:15px;
     margin-bottom:25px;
 }
 
-p{
-    font-size:24px;
+.info-box{
+    background:#f7faf5;
+    border-left:6px solid #5b9a6b;
+    padding:20px;
+    border-radius:10px;
+    margin-top:25px;
+}
+
+.info-box p{
+    font-size:22px;
     line-height:1.8;
 }
 
@@ -52,10 +146,62 @@ p{
     background:#2c5638;
 }
 
-.info-box{
-    background:#f7faf5;
-    border-left:6px solid #5b9a6b;
-    padding:20px;
-    border-radius:10px;
-    margin-top:25px;
+/* ---------------------- */
+/* MOBILE */
+/* ---------------------- */
+
+@media (max-width:700px){
+
+    h1{
+        font-size:30px;
+        margin-top:18px;
+    }
+
+    .subtitle{
+        font-size:16px;
+        margin-bottom:15px;
+    }
+
+    .map-container{
+        padding:5px;
+    }
+
+    .legend{
+        width:96%;
+        padding:20px 15px;
+        margin-top:25px;
+    }
+
+    .legend h2{
+        font-size:24px;
+    }
+
+    .legend-grid{
+        grid-template-columns:1fr;
+        gap:14px;
+    }
+
+    .legend-grid a{
+        font-size:18px;
+        padding:18px;
+    }
+
+    header{
+        padding:18px;
+    }
+
+    header h1{
+        font-size:30px;
+    }
+
+    .container{
+        margin:15px;
+        padding:20px;
+    }
+
+    .info-box p{
+        font-size:18px;
+        line-height:1.6;
+    }
+
 }
