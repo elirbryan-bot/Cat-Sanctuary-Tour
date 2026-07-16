@@ -42,8 +42,15 @@
 
 <div class="map-container">
 
-    <img src="Images/map.jpg" alt="Cat Sanctuary Map">
+    <img id="mapImage"
+         src="Images/map.jpg"
+         alt="Map of the Cat Sanctuary"
+         onclick="openMap()">
 
+</div>
+
+<div id="fullscreenMap" class="fullscreen-map" onclick="closeMap()">
+    <img src="Images/map.jpg" alt="Full Screen Map">
 </div>
     
 </body>
