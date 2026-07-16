@@ -1,94 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cat Sanctuary Virtual Tour</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Sanctuary Virtual Tour</title>
 
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        margin: 0;
-        background: #f4f4f4;
-    }
-
-    h1{
-    font-size:clamp(1.5rem,5vw,2.8rem);
-    padding:15px 10px;
-    margin:0;
-    }
-
-    .map-container{
-    max-width:1400px;
-    margin:auto;
-    padding:8px;
-    }
-
-    img{
-    width:100%;
-    height:auto;
-    border-radius:12px;
-    border:2px solid #bbb;
-    }
-    
-.legend {
-    width:95%;
-    max-width:900px;
-    margin: 40px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-}
-
-.legend h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.legend-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 16px;
-}
-
-.legend-grid a{
-    display:block;
-    background:#4CAF50;
-    color:white;
-    text-decoration:none;
-    text-align:center;
-    padding:18px 14px;
-    border-radius:10px;
-    font-size:18px;
-    font-weight:bold;
-}
-
-.legend-grid a:hover {
-    background: #2E7D32;
-    transform: scale(1.03);
-}
-
-</style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <h1>Cat Sanctuary Virtual Tour</h1>
 
+<p class="subtitle">
+    Use the buttons below to learn more about each location!
+</p>
+
 <div class="map-container">
 
-<img src="Images/map.jpg" usemap="#sanctuarymap" alt="Cat Sanctuary Map">
+    <img src="Images/map.jpg" alt="Cat Sanctuary Map">
 
-<map name="sanctuarymap">
+</div>
 
 <div class="legend">
+
     <h2>Explore the Sanctuary</h2>
 
     <div class="legend-grid">
 
-        <a href="Legend/front-courtyard.html">Front courtyard</a>
+        <a href="Legend/front-courtyard.html">Front Courtyard</a>
         <a href="Legend/conner-house.html">Conner House</a>
         <a href="Legend/visitor-area.html">Visitor Area</a>
         <a href="Legend/leukemia.html">Leukemia</a>
@@ -96,16 +36,13 @@
         <a href="Legend/hill-house.html">Hill House</a>
         <a href="Legend/old-rabbit-area.html">Old Rabbit Area</a>
         <a href="Legend/yellow-shed.html">Yellow Shed</a>
-        <a href="Legend/gazebo.html">Gazebo / Dons dugout</a>
+        <a href="Legend/gazebo.html">Gazebo / Doug's Dugout</a>
         <a href="Legend/single-wide.html">Single Wide</a>
-        <a href="Legend/back-courtyard.html">Back courtyard / Pens</a>
+        <a href="Legend/back-courtyard.html">Back Courtyard / Pens</a>
         <a href="Legend/new-aids.html">New Aids</a>
-        <a href="Legend/double-wide.html">Double Wide / Houser House</a>
+        <a href="Legend/double-wide.html">Houser House</a>
 
     </div>
-</div>
- 
-</map>
 
 </div>
 
